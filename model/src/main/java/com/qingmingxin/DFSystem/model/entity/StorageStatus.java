@@ -12,8 +12,14 @@ import java.util.Date;
 public class StorageStatus extends BaseEntity {
     private static final long serialVersionUID = 1L;
 
-
+    @Schema(description="存储节点ID")
+    @TableField(value = "storage_node_id")
     private Long storageNodeId;
+
+    @Schema(description="时间戳")
+    @TableField(value="time_stamp")
     private Date timestamp;
+
+    
 
 }
